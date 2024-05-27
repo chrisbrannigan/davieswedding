@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Davies Wedding 2024</title>
+    <link rel="icon" type="image/x-icon" href="./assets/weddingfavicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html#title-container"><span>The Davies Wedding</span></a>
+
+            <div id="navbar-links">
+                <a class="navbar-link" href="index.html" onclick="toggleMenu()">Home</a>
+                <a class="navbar-link" href="index.html#info-section" onclick="toggleMenu()">The Day</a>
+                <a class="navbar-link" href="index.html#rsvp-section" onclick="toggleMenu()">RSVP</a>
+                <a class="navbar-link" href="index.html#contact-section" onclick="toggleMenu()">Contact</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- REMINDER SECTION-->
+        <section id="choices-reminder-section" class="container">
+
+            <h2>Menu Choices Reminder</h2>
+
+            <p>Enter your <b>full name</b> below:</p>
+
+            <label for="name">Full name</label>
+            <input type="text" placeholder="e.g. Zeus Davies" id="name" onfocus="hideMessages()"></input>
+            <input class="button" type="submit" value="Submit" onclick="searchForChoices()">
+            </div>
+
+            <div id="choices-error-section">
+                <br>
+                <h2 class="cursive" id="choice-message">Oops!</h2>
+                <p class="choice-value" id="choice-error-message"></p>
+            </div>
+
+            <div id="choices-result-section">
+
+                <br>
+                <h2 class="cursive">Your Choices...</h2>
+
+                <h4 class="choice-title">Starter</h4>
+                <p class="choice-value" id="choice-starter"></p>
+
+                <h4 class="choice-title">Main</h4>
+                <p class="choice-value" id="choice-main"></p>
+
+                <h4 class="choice-title">Dessert</h4>
+                <p class="choice-value" id="choice-dessert"></p>
+
+                <br>
+
+                <b class="choice-title">Dietary Requirements:  </b>
+                <span class="choice-value" id="choice-dietary"></span>
+
+            </div>
+
+            </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve-columns">
+                    <p>Copyright &copy; <a id="zeus-link" href="goodboy.html">Chris Brannigan</a> 2024.</p>
+                    <p class="footer-tagline">For my little sister and her hubby to be, <br> made with love by
+                        Christopher B. <i class="fa-regular fa-heart"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../webroot/js/scripts.js"></script>
+    <script src="../webroot/js/choiceChecker.js"></script>
+    <script src="https://kit.fontawesome.com/560e9a768b.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

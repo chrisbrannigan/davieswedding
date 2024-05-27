@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Davies Wedding 2024</title>
+    <link rel="icon" type="image/x-icon" href="./assets/weddingfavicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="#title-container"><span>The Davies Wedding</span></a>
+
+            <div id="navbar-links">
+                <a class="navbar-link" href="#title-container" onclick="toggleMenu()">Home</a>
+                <a class="navbar-link" href="#info-section" onclick="toggleMenu()">The Day</a>
+                <a class="navbar-link" href="#rsvp-section" onclick="toggleMenu()">RSVP</a>
+                <a class="navbar-link" href="#contact-section" onclick="toggleMenu()">Contact</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- TITLE SECTION-->
+        <div id="title-container">
+            <div class="names-container">
+                <h1 class="title title-names">Kimberley</h1>
+                <h1 class="title title-names">&amp;</h1>
+                <h1 class="title title-names">Richard</h1>
+            </div>
+
+            <h1 id="title-date" class="title">29.05.2024</h1>
+            <h1 id="title-venue" class="title">Norton House Hotel</h1>
+        </div>
+
+        <!-- COUNTDOWN SECTION -->
+        <section id="countdown-section">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve-columns">
+                        <span id="countdown-value"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO SECTION-->
+        <section id="info-section">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>The Day</h2>
+
+                        <div class="timeline-container">
+
+                            <div class="timeline-item" time-is="1pm">
+                                <h3>Guests Arrive</h3>
+                                <p>Please arrive no later than 1:30pm to be seated.</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="2pm">
+                                <h3>"I Do."</h3>
+                                <p>We officially become Mr and Mrs Davies&excl;</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="2:30pm">
+                                <h3>Fizz, Nibbles and Photos</h3>
+                                <p>Take a moment to grab a drink, some nibbles and mingle.</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="4:30pm">
+                                <h3>Speeches</h3>
+                                <p>The Best Man takes his opportunity to roast the groom one last time.</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="5pm">
+                                <h3>Wedding Breakfast</h3>
+                                <p>The wonderful staff at Norton House Hotel will be looking after us. Don't forget what
+                                    you chose&excl; </p>
+                                <a id="reminder-link" href="forgot.html">I forgot &#128532;</a>
+                            </div>
+
+                            <div class="timeline-item" time-is="7pm">
+                                <h3>Evening Guests Arrive</h3>
+                                <p>These are the headers that we couldn't trust coming to the day as there would likely
+                                    be 'mooney' pictures in our wedding album.</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="8pm">
+                                <h3>Cut the Cake</h3>
+                                <p>We'll be tastefully ruining a piece of culinary art.</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="8:30pm">
+                                <h3>First Dance</h3>
+                                <p>Grab your tissues and your cameras, we're married, all dolled up and we're having a
+                                    dance.</p>
+                            </div>
+
+                            <div class="timeline-item" time-is="Until late">
+                                <h3>Party</h3>
+                                <p>Put on your dancing shoes, it's time to celebrate!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- RSVP SECTION-->
+        <section id="rsvp-section">
+            <div id="rsvp-container" class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>RSVP</h2>
+                        <p>If you have received an invitation to the day, please use the link to submit your RSVP.</p>
+                        <a href="https://forms.office.com/r/qw33RQWB2J" target="_blank"><button id="rsvp"
+                                class="button">Submit R.S.V.P</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ACCOMMODATION SECTION-->
+        <section id="accommodation-section">
+            <div id="accommodation-container" class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>Accommodation</h2>
+                        <p>There is limited availability with accommdation at the hotel. If you would like to book a
+                            room please contact us and we'll let you know what the current availability and costs are.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION-->
+        <section id="contact-section">
+            <div class="container">
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>Contact</h2>
+                        <p>If you need to contact us about anything, please message either of us directly via Facebook
+                            Messenger or Instagram and we'll get back to you ASAP.</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+
+                        <div class="contact-card">
+                            <img src="../webroot/assets/kim.png" alt="Kim" style="width:100%">
+                            <h1>Kim</h1>
+                            <p class="contact-card-title">The Bride</p>
+                            <a href="https://www.instagram.com/kim.brannigan/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/kimberley.brannigan.9"><i
+                                    class="fa-brands fa-facebook"></i></i></a>
+                        </div>
+
+                        <div class="contact-card">
+                            <img src="../webroot/assets/rich.png" alt="Rich" style="width:100%">
+                            <h1>Rich</h1>
+                            <p class="contact-card-title">The Groom</p>
+                            <a href="https://www.instagram.com/rdaviesmvp/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/richard.davies.12935"><i
+                                    class="fa-brands fa-facebook"></i></i></a>
+                        </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve-columns">
+                    <p>Copyright &copy; <a id="zeus-link" href="goodboy.html">Chris Brannigan</a> 2024.</p>
+                    <p class="footer-tagline">For my little sister and her hubby to be, <br> made with love by Christopher B. <i class="fa-regular fa-heart"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../webroot/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/560e9a768b.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

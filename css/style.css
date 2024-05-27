@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap');
+
+* {
+    font-family: 'Source Serif 4', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+/* NAVIGATION STYLING START */
+
+footer {
+    margin-top: auto;
+    background-color: #2f2f2f;
+    color: white;
+    padding: 2rem 0;
+}
+
+.navbar {
+    min-height: 50px;
+    background-color: #fdc3c6;
+    color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-top: 14px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    padding-left: 21px;
+}
+
+.navbar #navbar-links {
+    display: none;
+    margin-top: 14px;
+    padding-left: 28px;
+    padding-bottom: 7px;
+    border-top: 2px solid #2f2f2f;
+}
+
+.navbar a.icon {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+
+.navbar a {
+    margin-right: 28px;
+    font-size: 2rem;
+    display: block;
+    color: #191919;
+}
+
+
+.navbar #navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar #navbar-links a:selected {
+    text-decoration: underline;
+}
+
+
+/* NAVIGATION STYLING END */
+
+
+/* LINK STYLING START */
+
+
+/* LINK STYLING END */
+
+
+/* TITLE STYLING START */
+.title {
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#title-container {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    background-image: url('../assets/bridge.jpeg');
+    background-size: cover;
+    background-position: 20%;
+
+}
+
+.title {
+    padding-top: 8rem;
+}
+
+.title:last-child {
+    padding-top: 0rem;
+}
+
+.title-names {
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
+}
+
+#title-date {
+    font-size: 5rem;
+}
+
+#title-venue {
+    font-size: 3rem;
+}
+
+/* TITLE STYLING END */
+
+
+/* SECTION STYLING START */
+
+section {
+    margin: 10rem 0;
+    scroll-margin-top: 75px;
+}
+
+/* SECTION STYLING END */
+
+
+/* COUNTDOWN SECTION START */
+
+#countdown-section {
+    min-height: 200px;
+}
+
+#countdown-section .container {
+    text-align: center;
+}
+
+#countdown-value {
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
+    padding-top: 4rem;
+}
+
+/* COUNTDOWN SECTION END */
+
+
+/* TIMELINE STYLING START */
+.timeline-container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    color: rgba(0, 0, 0, .7);
+    border-left: 2px solid rgba(0, 0, 0, .3);
+}
+
+.timeline-item::before {
+    content: attr(time-is);
+    position: absolute;
+    left: 2em;
+    top: 1em;
+    display: block;
+}
+
+.timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 2rem;
+    position: absolute;
+    left: -9px;
+    border-radius: 10px;
+    content: '';
+    border: 3px solid #fdc3c6;
+    background: #fdc3c6;
+}
+
+.timeline-item:last-child {
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+
+/* RSVP STYLING START */
+#rsvp {
+    font-size: 1.8rem;
+    display: block;
+    align-self: center;
+}
+
+/* RSVP STYLING START */
+
+
+/* CONTACT STYLING START */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.contact-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-card h1 {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contact-card-title {
+    color: rgb(88, 88, 88);
+    margin: 0;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    margin: 7px;
+}
+
+/* CONTACT STYLING END */
+
+
+#zeus-image {
+    max-height: 100vh;
+    max-width: 100vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#zeus-link {
+    text-decoration: none;
+    color: #fdc3c6;
+    cursor: pointer;
+}
+
+.footer-tagline {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(106, 106, 106);
+}
+
+#choices-reminder-section {
+    margin-top: 4rem;
+}
+
+#choices-error-section {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+#choices-result-section {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+}
+
+#reminder-link {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #e69094;
+    cursor: pointer;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+    .navbar #navbar-links {
+        float: right;
+        border-top: none;
+        margin-top: 0;
+    }
+
+    .navbar a {
+        display: inline-block;
+    }
+
+    .navbar a.icon {
+        display: none;
+    }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+    .names-container {
+        text-align: center;
+        padding-top: 14rem;
+    }
+
+    .title:last-child {
+        padding-top: 5rem;
+    }
+
+    .title-names {
+        font-size: 12rem;
+        display: inline-block;
+        padding-right: 3rem;
+    }
+
+    #title-date {
+        font-size: 8rem;
+    }
+
+    #title-venue {
+        font-size: 6rem;
+    }
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
